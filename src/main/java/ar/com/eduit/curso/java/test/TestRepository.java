@@ -67,8 +67,6 @@ public class TestRepository {
         
         cr.getLikeTitulo("ja").forEach( System.out::println );
         
-        System.out.println("*********************");
-        
         I_AlumnoRepository ar = new AlumnoRepository(Connector.getConnection());
         
         /*
@@ -85,7 +83,7 @@ public class TestRepository {
         ar.getAll().forEach(System.out::println);
         
         System.out.println("********************************");
-        ar.getLikeApellido("Le").forEach(System.out::println);
+        ar.getLikeApellido("Ra").forEach(System.out::println);
 
         System.out.println("********************************");
         ar.getLikeCurso(cr.getById(1)).forEach(System.out::println);
